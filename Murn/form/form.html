@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="date"]{
+            width: 300px;
+            padding: 5px;
+            border-left: 1px solid #ffffff;
+            border-top: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+        }
+    </style>
+</head>
+<body align="center">
+    <h1>Sports Physician Form</h1>
+    <form action="actionpage.html" method="get">
+        <fieldset align="left">
+            <legend><h4>Athlete Information</h4></legend>
+            <ul>
+                <li><label for="name">Name :</label> <input type="text" name="name" id="name"></li>
+                <li><label for="school">School/Team:</label> <input type="text" name="school" id="school"></li>
+                <li><label for="sport">Sport:</label> <input type="text" name="sport" id="sport" ></li>
+                <li><label for="parent_name">Parent/Guardian Name:</label> <input type="text" name="parent_name" id="parent_name" ></li>
+                <li><label for="contact_number">Contact Number:</label> <input type="text" name="contact_number" id="contact_number" ></li>
+            </ul>
+        </fieldset>
+        <fieldset align="left">
+            <legend><h4>Medical History</h4></legend>
+            <ul>
+                <li><label for="concussion_history">History of concussion:</label> <input type="radio" name="concussion_history" id="yes" value="yes" ><label for="yes">Yes</label> <input type="radio" name="concussion_history" id="no" value="no" ><label for="no">No</label></li>
+                <li><label for="previous_surgeries">Previous surgeries:</label> <input type="text" name="previous_surgeries" id="previous_surgeries"></li>
+                <li><label for="bone_fractures">Any bone fractures? :</label> <input type="radio" name="bone_fractures" id="fractures_yes" value="yes" ><label for="fractures_yes">Yes</label> <input type="radio" name="bone_fractures" id="fractures_no" value="no" ><label for="fractures_no">No</label></li>
+                <li><label for="asthma">Asthma or breathing problems:</label> <input type="radio" name="asthma" id="asthma_yes" value="yes" ><label for="asthma_yes">Yes</label> <input type="radio" name="asthma" id="asthma_no" value="no" ><label for="asthma_no">No</label></li>
+            </ul>
+        </fieldset>
+        <fieldset align="left">
+            <legend><h4>Doctor's Recommendations for Sport Partition</h4></legend>
+            <ul>
+                <li><label for="Cleared">Cleared for sports:</label> <input type="radio" name="Cleared" id="cleared_yes" value="yes" ><label for="cleared_yes">Yes</label> <input type="radio" name="Cleared" id="cleared_no" value="no" ><label for="cleared_no">No</label></li>
+                <li><label for="reasons">If not cleared, provide reasons:</label><input type="text" name="reasons" id="reasons"></li>
+                <li><label for="sign">Physician's Signature:</label><input type="text" name="sign" id="sign"><label for="sign">Date:</label><input type="date" name="date" id="date"></li>
+            </ul>
+        </fieldset><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
