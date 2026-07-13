@@ -1,0 +1,104 @@
+body {
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+h3{
+    font-size: 26px;
+    text-align: center;
+    color: #213c8f;
+}
+p {
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+    background-color: #547aed;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: -25px;
+}
+.icon-img{
+    margin-top: 30px;
+    margin-left: 5px;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+.card{
+    border: 0px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.client-name{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #213c8f;
+}
+.client-title{
+    text-align: center;
+    font-size: 14px;
+    color: red;
+}
+.rating{
+    text-align: center;
+    color: #f39c12;
+    font-size: 16px;
+}
+.client-review{
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+}
+.chat{
+    background-color: blue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.comment{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+}
+.msg{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+}
