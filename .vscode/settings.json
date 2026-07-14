@@ -1,3 +1,4 @@
 {
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "livePreview.defaultPreviewPath": "/flex box/practice2.html"
 }
