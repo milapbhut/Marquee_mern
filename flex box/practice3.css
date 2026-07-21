@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+body{
+    padding: 0px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+}
+.demo{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px ;
+    /* padding: 10px; */
+}
+.left{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: #0675bf;
+    color: white;
+}
+.title{
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+}
+#active{
+    background-color: white;
+    color: black;
+}
+.eliment{
+    margin: 5px;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+}
+.eliment_icon{
+    padding: 5px;
+}
+.eliment_name{
+    padding: 5px;
+}
+.right{
+    width: 70%;
+}
+.right_detail_title{
+    display: flex;
+    height: 10%;
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+.title_icon{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 35px;
+    width: 35px;
+    background-color: #0675bf;
+    color: white;
+    border-radius: 10px;
+}
+.title_name{
+    padding-left: 10px;
+    text-align: start;
+    display: flex;
+    justify-content: top;
+    font-size: 28px;
+    color:#192f78
+}
+.right_detail_content{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    flex-wrap: wrap;   
+}
+.content_eliment{
+    height: 100px;
+    width: 120px;
+    border: 1px solid rgb(112, 111, 111);
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.content_eliment_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f7;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 10px;
+}
