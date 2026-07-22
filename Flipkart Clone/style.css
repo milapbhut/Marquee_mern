@@ -236,15 +236,16 @@ body {
 }
 
 .categories-list {
-  display: flex;
-  overflow-x: auto;
+  display: grid;
+  grid-auto-columns: 100px;
+  /* overflow-x: auto; */
   /* white-space: nowrap; */
   padding: 0 24px;
 }
 
-.categories-list::-webkit-scrollbar {
-  display: none;
-}
+/* .categories-list::-webkit-scrollbar { */
+  /* display: none; */
+/* } */
 
 .categories-list a {
   text-decoration: none;
