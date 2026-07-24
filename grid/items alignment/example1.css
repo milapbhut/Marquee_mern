@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(67, 25, 105);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    /* What is the Difference Btweeen Cells and Items */
+    /* grid-row and grid-col */
+    /* grid-template-areas:; */
+}
+#item-1{
+    background-color: green;
+    grid-row: span 3;
+}
+#item-2 {
+    background-color: green;
+    grid-column: span 2;
+}
+#item-3 {
+    background-color: red;
+}
+#item-4 {
+    background-color: yellow;
+}
+#item-5 {
+    background-color: red;
+}
+#item-6 {
+    background-color: green;
+    grid-row: span 2;
+}
+#item-7 {
+    background-color: red;
+}
+#item-8 {
+    background-color: yellow;
+}
+.items {
+    background-color: rgb(251, 204, 144);
+}
