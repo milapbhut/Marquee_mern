@@ -1,0 +1,157 @@
+Transform Property in CSS
+
+The transform property in CSS allows you to apply 2D or 3D transformations to elements, such as
+1. rotating : rotate()
+2. scaling, : scaleX() , scaleY() , scale()
+3. translating them :   translateX() , translateY() , translate()
+
+
+
+====> Rotating <=====
+The rotate() CSS function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it. Its result is a <transform-function> data type
+
+
+transform: rotate(0);
+
+transform: rotate(90deg);
+
+transform: rotate(0.25turn);
+
+
+
+=====> Scaling  <====
+scale refers to  resizing an element in the 2D or 3D
+2D = x, Y
+3d =  x,y,Z
+
+
+The scaleX() CSS function defines a transformation that resizes an element along the x-axis (horizontally). It
+
+transform: scaleX(1);
+transform: scaleX(0.7);
+transform: scaleX(1.3);
+
+
+The scaleY() CSS function defines a transformation that resizes an element along the y-axis (vertically).
+
+transform: scaleY(1);
+transform: scaleY(0.7);
+transform: scaleY(1.3);
+
+
+
+The scale() CSS function defines a transformation that resizes an element on the 2D plane.
+
+transform: scale(1);
+transform: scale(0.7);
+
+transform: scale(1, 1.7); // x, y
+
+=====> translating <====
+In CSS, translate() is a transform function used to move (translate) an element along the X and/or Y axis without affecting the document flow.
+
+
+translateX(50px) → Move only horizontally
+translateY(30px) → Move only vertically
+translateZ(20px) → Move along the Z-axis (3D)
+translate3d(x, y, z) → Move in 3D space
+
+Note: Does not affect surrounding elements (unlike margin or position).
+
+
+
+
+=====> skewing <=====
+Refer this >>>>
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/skew
+Filter Property in CSS
+
+The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
+
+
+MDN Link : https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
+
+filter: url("/shared-assets/images/examples/shadow.svg#element-id");
+filter: blur(5px);
+filter: contrast(200%);
+filter: grayscale(10%);
+*** CSS transition:Use a transition when you want something to change smoothly after a user action
+click, hover,focus
+
+Changes happen between two states of an element Example ( form
+normal to hover)
+1. Note:  Requires a trigger, such as hovering, clicking, or adding a class with JavaScript.
+2. Can only animate from point A to point B (start to end).
+
+3. Simple to use for small interactions like button hover effects.
+
+----- Target, ON What states and changes you need to perform transition
+
+transition-property : On which property
+transition-duration: duration (For how long)
+transition-timing-function
+transition-delay: to delay
+
+
+the transition-timing-function property specifies the speed curve of the transition effect.
+
+ease - transition will start slow, then go fast, and end slow (this is default)
+linear - transition will keep the same speed from start to end
+ease-in - transition will start slow
+ease-out - transition will end slow
+ease-in-out - transition will have a slow start and end
+
+
+Shorthand: transition: width 2s, height 4s, background-color 3s;
+
+
+
+
+*** CSS animation: Use an animation when you need continuous motion or multiple steps without requiring user interaction.
+
+1. Does not require a trigger; can start automatically.
+2. Uses ~keyframes~ to define multiple stages of animation.
+3. Can loop, repeat, and run continuously.
+4. Offers more control: timing, direction, delays, iteration count, and more.
+Used for complex or continuous animations, such as loaders or moving backgrounds.
+
+Property of animation:
+@keyframess
+animation-name
+animation-duration
+animation-direction
+animation-iteration-count
+
+
+
+Example transition:
+Css.box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: background 0.5s ease;
+}
+
+.box:hover {
+    background: red;
+}
+
+Example animation:
+Css.box {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    animation: moveBox 2s infinite;
+}
+
+/* Keyframes define multiple points of animation */
+@keyframes moveBox {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+In simple terms:
+
+Use a transition when you want something to change smoothly after a user action.
+Use an animation when you need continuous motion or multiple steps without requiring user interaction.

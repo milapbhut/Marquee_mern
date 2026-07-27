@@ -18,15 +18,25 @@ body {
     width: 100vw;
     background-color: rgb(67, 25, 105);
 }
-
+.title{
+    font-family: var(--title-font);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+}
+.detail{
+    font-family: var(--detail-font);
+    font-size: 25px;
+    padding: 10px;
+}
 #container {
-    height: 1000px;
-    width: 1000px;
+    height: 1500px;
+    width: 1500px;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(3, 350px);
     gap: 20px;
-    background-color: #f9faf2;
+    background-color: #b2b5a1;
     align-content: center;
     justify-content: center;
 }
@@ -36,26 +46,188 @@ body {
 #item-1 {
     background-color: #c3b3e6;
     grid-row: span 2;
+    display: flex;
+    flex-direction: column;
 }
-
+.Customization_title{
+    padding: 10px;
+    height: 100px;
+}
+.Customization_img{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#Customization_img_2{
+    position: absolute;
+    display: flex;
+    left: 180px;
+}
+#Customization_img_1{
+    position: relative;
+    right: 40px;
+    transform: rotate(-20deg);
+}
+.Customization_item{
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    width: 280px;
+    position: relative;
+    right: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-top: 50px;
+}
+.Customization_detail{
+    height: 200px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #item-2 {
     background-color: #f582a2;
     grid-column: span 2;
+    display: flex;
 }
-
+.Scheduling_text{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 10px;
+}
+.Scheduling_img{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#Scheduling_img_1{
+    position: relative;
+    transform: rotate(-20deg);
+    right: 100px;
+    height: 300px;
+}
+#Scheduling_img_2 {
+    position: absolute;
+    transform: rotate(15deg);
+    border-radius: 25px;
+    left: 150px;
+    height: 300px;
+}
 #item-3 {
     background-color: #c6d98f;
+    display: flex;
+    flex-direction: column;
 }
-
+.Wallet_img{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+#Wallet_img1{
+    position: absolute;
+    transform-origin: left center;
+    transform: rotate(-11deg);
+    border-radius: 10px;
+}
+#Wallet_img2 {
+    position: absolute;
+    transform-origin: left center;
+    transform: rotate(-8deg);
+    border-radius: 10px;
+}
+#Wallet_img3 {
+    position: absolute;
+    transform-origin: left center;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+}
+#Wallet_img4 {
+    position: absolute;
+    border-radius: 20px;
+}
+.Wallet_text{
+    margin: 10px;
+}
 #item-4 {
     background-color: #fcde6f;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
-
+.Inbox_text{
+    width: 70%;
+}
+.Inbox_img{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    overflow: scroll;
+    scrollbar-width: none;
+    position: relative;
+}
+#Inbox_img1{
+    position: absolute;
+    border-radius: 20px;
+}
 #item-5 {
     background-color: #f7a274;
     grid-column: span 2;
+    display: flex;
+    overflow: hidden;
 }
-
+.SendGifts_text{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 10px;
+}
+.SendGifts_img{
+    display: flex;
+    gap: 30px;
+    transform: rotate(-15deg);
+    height: 350px;    
+}
+.card{
+    width: 150px;
+    border-radius: 10px;
+}
+.SendGifts_img_line_1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.SendGifts_img_line_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.SendGifts_img_line_3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
 #item-6 {
     background-color: #b4ccd9;
+    overflow: hidden;
+    position: relative;
+}
+.Reminders_text{
+    height: 150px;
+    width: 250px;
+}
+.Reminders_img{
+    position: absolute;
+    right: 0px;
 }
