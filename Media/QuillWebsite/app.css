@@ -324,10 +324,9 @@ span {
     grid-template-columns: 1fr;
     row-gap: 10rem;
   }
-    .feature-headings{
-      font-size: 30px;
-    }
-  
+  .feature-headings{
+    font-size: 30px;
+  }
 }
 .feature-headings {
   margin-bottom: 2rem;
